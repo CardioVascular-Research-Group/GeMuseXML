@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/sgranit1/Downloads/eclipselink-2.5.0.v20130507-3faac2b/eclipselink/jlib/moxy/com.sun.tools.xjc_2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sgranit1/Downloads/eclipselink-2.5.0.v20130507-3faac2b/eclipselink/jlib/moxy/com.sun.xml.bind_2.2.0.v201004141950.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sgranit1/Downloads/eclipselink-2.5.0.v20130507-3faac2b/eclipselink/jlib/moxy/javax.xml.bind_2.2.0.v201105210648.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

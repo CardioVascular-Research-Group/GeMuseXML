@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faceted-project>
+  <runtime name="jre6"/>
+  <fixed facet="java"/>
+  <fixed facet="jpt.jaxb"/>
+  <installed facet="java" version="1.6"/>
+  <installed facet="jpt.jaxb" version="2.1"/>
+</faceted-project>
