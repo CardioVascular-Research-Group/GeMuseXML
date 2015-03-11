@@ -1,0 +1,174 @@
+<!ELEMENT ACFilter ( #PCDATA ) >
+
+<!ELEMENT AcquisitionDate ( #PCDATA ) >
+
+<!ELEMENT AcquisitionDevice ( #PCDATA ) >
+
+<!ELEMENT AcquisitionSoftwareVersion ( #PCDATA ) >
+
+<!ELEMENT AcquisitionTime ( #PCDATA ) >
+
+<!ELEMENT AdmitTime ( #PCDATA ) >
+
+<!ELEMENT AgeUnits ( #PCDATA ) >
+
+<!ELEMENT AnalysisSoftwareVersion ( #PCDATA ) >
+
+<!ELEMENT AtrialRate ( #PCDATA ) >
+
+<!ELEMENT BaselineSway ( #PCDATA ) >
+
+<!ELEMENT CartNumber ( #PCDATA ) >
+
+<!ELEMENT DataType ( #PCDATA ) >
+
+<!ELEMENT DateofBirth ( #PCDATA ) >
+
+<!ELEMENT Diagnosis ( Modality, DiagnosisStatement+ ) >
+
+<!ELEMENT DiagnosisStatement ( StmtFlag, StmtText ) >
+
+<!ELEMENT ECGSampleBase ( #PCDATA ) >
+
+<!ELEMENT ECGSampleExponent ( #PCDATA ) >
+
+<!ELEMENT FirstSampleBaseline ( #PCDATA ) >
+
+<!ELEMENT Gender ( #PCDATA ) >
+
+<!ELEMENT GlobalRR ( #PCDATA ) >
+
+<!ELEMENT HeightIN ( #PCDATA ) >
+
+<!ELEMENT HighPassFilter ( #PCDATA ) >
+
+<!ELEMENT LeadAmplitudeUnits ( #PCDATA ) >
+
+<!ELEMENT LeadAmplitudeUnitsPerBit ( #PCDATA ) >
+
+<!ELEMENT LeadByteCountTotal ( #PCDATA ) >
+
+<!ELEMENT LeadData ( LeadByteCountTotal, LeadTimeOffset, LeadSampleCountTotal, LeadAmplitudeUnitsPerBit, LeadAmplitudeUnits, LeadHighLimit, LeadLowLimit, LeadID, LeadOffsetFirstSample, FirstSampleBaseline, LeadSampleSize, LeadOff, BaselineSway, LeadDataCRC32, WaveFormData ) >
+
+<!ELEMENT LeadDataCRC32 ( #PCDATA ) >
+
+<!ELEMENT LeadHighLimit ( #PCDATA ) >
+
+<!ELEMENT LeadID ( #PCDATA ) >
+
+<!ELEMENT LeadLowLimit ( #PCDATA ) >
+
+<!ELEMENT LeadOff ( #PCDATA ) >
+
+<!ELEMENT LeadOffsetFirstSample ( #PCDATA ) >
+
+<!ELEMENT LeadSampleCountTotal ( #PCDATA ) >
+
+<!ELEMENT LeadSampleSize ( #PCDATA ) >
+
+<!ELEMENT LeadTimeOffset ( #PCDATA ) >
+
+<!ELEMENT Location ( #PCDATA ) >
+
+<!ELEMENT LowPassFilter ( #PCDATA ) >
+
+<!ELEMENT MeasurementMatrix ( #PCDATA ) >
+
+<!ELEMENT Modality ( #PCDATA ) >
+
+<!ELEMENT MuseInfo ( MuseVersion, RegisteredName ) >
+
+<!ELEMENT MuseVersion ( #PCDATA ) >
+
+<!ELEMENT Number ( #PCDATA ) >
+
+<!ELEMENT NumberofLeads ( #PCDATA ) >
+
+<!ELEMENT Order ( AdmitTime, UnconfirmedReceivedTime ) >
+
+<!ELEMENT PAxis ( #PCDATA ) >
+
+<!ELEMENT POffset ( #PCDATA ) >
+
+<!ELEMENT POnset ( #PCDATA ) >
+
+<!ELEMENT PRInterval ( #PCDATA ) >
+
+<!ELEMENT PatientDemographics ( PatientID, AgeUnits, DateofBirth, Gender, Race, HeightIN, WeightLBS, PatientLastName, PatientFirstName ) >
+
+<!ELEMENT PatientAge ( #PCDATA ) >
+
+<!ELEMENT PatientFirstName ( #PCDATA ) >
+
+<!ELEMENT PatientID ( #PCDATA ) >
+
+<!ELEMENT PatientLastName ( #PCDATA ) >
+
+<!ELEMENT Priority ( #PCDATA ) >
+
+<!ELEMENT QOffset ( #PCDATA ) >
+
+<!ELEMENT QOnset ( #PCDATA ) >
+
+<!ELEMENT QRS ( Number, Type, Time ) >
+
+<!ELEMENT QRSCount ( #PCDATA ) >
+
+<!ELEMENT QRSDuration ( #PCDATA ) >
+
+<!ELEMENT QRSTimesTypes ( QRS+, GlobalRR ) >
+
+<!ELEMENT QTCorrected ( #PCDATA ) >
+
+<!ELEMENT QTInterval ( #PCDATA ) >
+
+<!ELEMENT Race ( #PCDATA ) >
+
+<!ELEMENT RAxis ( #PCDATA ) >
+
+<!ELEMENT RegisteredName EMPTY >
+
+<!ELEMENT RestingECG ( MuseInfo, PatientDemographics, TestDemographics, Order, RestingECGMeasurements, Diagnosis, MeasurementMatrix, QRSTimesTypes, Waveform+ ) >
+
+<!ELEMENT RestingECGMeasurements ( VentricularRate, AtrialRate, PRInterval, QRSDuration, QTInterval, QTCorrected, PAxis, RAxis, TAxis, QRSCount, QOnset, QOffset, POnset, POffset, TOffset, ECGSampleBase, ECGSampleExponent ) >
+
+<!ELEMENT SampleBase ( #PCDATA ) >
+
+<!ELEMENT SampleExponent ( #PCDATA ) >
+
+<!ELEMENT SampleType ( #PCDATA ) >
+
+<!ELEMENT Site ( #PCDATA ) >
+
+<!ELEMENT SiteName ( #PCDATA ) >
+
+<!ELEMENT Status ( #PCDATA ) >
+
+<!ELEMENT StmtFlag ( #PCDATA ) >
+
+<!ELEMENT StmtText ( #PCDATA ) >
+
+<!ELEMENT TAxis ( #PCDATA ) >
+
+<!ELEMENT TOffset ( #PCDATA ) >
+
+<!ELEMENT TestDemographics ( DataType, Site, SiteName, AcquisitionDevice, Status, Priority, Location, AcquisitionTime, AcquisitionDate, CartNumber, AcquisitionSoftwareVersion, AnalysisSoftwareVersion ) >
+
+<!ELEMENT Time ( #PCDATA ) >
+
+<!ELEMENT Type ( #PCDATA ) >
+
+<!ELEMENT UnconfirmedReceivedTime ( #PCDATA ) >
+
+<!ELEMENT VentricularRate ( #PCDATA ) >
+
+<!ELEMENT WaveFormData ( #PCDATA ) >
+
+<!ELEMENT Waveform ( WaveformType, WaveformStartTime, NumberofLeads, SampleType, SampleBase, SampleExponent, HighPassFilter, LowPassFilter, ACFilter, LeadData+ ) >
+
+<!ELEMENT WaveformStartTime ( #PCDATA ) >
+
+<!ELEMENT WaveformType ( #PCDATA ) >
+
+<!ELEMENT WeightLBS ( #PCDATA ) >
+

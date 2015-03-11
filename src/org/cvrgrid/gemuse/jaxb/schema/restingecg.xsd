@@ -8,11 +8,13 @@
 	<xs:element name="AcquisitionSoftwareVersion" type="xs:string"/>
 	<xs:element name="AcquisitionTime" type="xs:string"/>
 	<xs:element name="AdmitTime" type="xs:string"/>
+	<xs:element name="AgeUnits" type="xs:string"/>
 	<xs:element name="AnalysisSoftwareVersion" type="xs:string"/>
 	<xs:element name="AtrialRate" type="xs:string"/>
 	<xs:element name="BaselineSway" type="xs:string"/>
 	<xs:element name="CartNumber" type="xs:string"/>
 	<xs:element name="DataType" type="xs:string"/>
+	<xs:element name="DateofBirth" type="xs:string"/>
 	<xs:element name="Diagnosis">
 		<xs:complexType>
 			<xs:sequence>
@@ -32,7 +34,9 @@
 	<xs:element name="ECGSampleBase" type="xs:string"/>
 	<xs:element name="ECGSampleExponent" type="xs:string"/>
 	<xs:element name="FirstSampleBaseline" type="xs:string"/>
+	<xs:element name="Gender" type="xs:string"/>
 	<xs:element name="GlobalRR" type="xs:string"/>
+	<xs:element name="HeightIN" type="xs:string"/>
 	<xs:element name="HighPassFilter" type="xs:string"/>
 	<xs:element name="LeadAmplitudeUnits" type="xs:string"/>
 	<xs:element name="LeadAmplitudeUnitsPerBit" type="xs:string"/>
@@ -94,10 +98,17 @@
 	<xs:element name="POffset" type="xs:string"/>
 	<xs:element name="POnset" type="xs:string"/>
 	<xs:element name="PRInterval" type="xs:string"/>
+	<xs:element name="PatientAge" type="xs:string"/>
 	<xs:element name="PatientDemographics">
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element ref="PatientID"/>
+				<xs:element ref="AgeUnits"/>
+				<xs:element ref="DateofBirth"/>
+				<xs:element ref="Gender"/>
+				<xs:element ref="Race"/>
+				<xs:element ref="HeightIN"/>
+				<xs:element ref="WeightLBS"/>
 				<xs:element ref="PatientLastName"/>
 				<xs:element ref="PatientFirstName"/>
 			</xs:sequence>
@@ -131,6 +142,7 @@
 	<xs:element name="QTCorrected" type="xs:string"/>
 	<xs:element name="QTInterval" type="xs:string"/>
 	<xs:element name="RAxis" type="xs:string"/>
+	<xs:element name="Race" type="xs:string"/>
 	<xs:element name="RegisteredName">
 		<xs:complexType/>
 	</xs:element>
@@ -223,4 +235,5 @@
 	</xs:element>
 	<xs:element name="WaveformStartTime" type="xs:string"/>
 	<xs:element name="WaveformType" type="xs:string"/>
+	<xs:element name="WeightLBS" type="xs:string"/>
 </xs:schema>
